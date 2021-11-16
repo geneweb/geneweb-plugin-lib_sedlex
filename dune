@@ -1,0 +1,11 @@
+(alias
+  (name plugin)
+  (deps (file META) plugin_lib_sedlex.cmxs)
+)
+
+(executable
+  (name plugin_lib_sedlex)
+  (embed_in_plugin_libraries sedlex)
+  (flags -linkall)
+  (modes (native plugin))
+)
