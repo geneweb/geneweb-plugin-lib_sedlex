@@ -1,3 +1,5 @@
+(rule (target plugin_lib_sedlex.ml) (action (run touch %{target})))
+
 (alias
   (name plugin)
   (deps (file META) plugin_lib_sedlex.cmxs)
